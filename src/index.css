@@ -18,6 +18,27 @@ body{
   color: rgb(163, 163, 163);
 }
 
+.button-container{
+  display: flex;
+}
+
+.button-container>button{
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  background-color: rgb(38, 38, 38);
+  color: rgb(233, 233, 233);
+  border: 1px solid rgb(163, 163, 163);
+  margin-left: auto;
+}
+
+.button-container>button:hover{
+  background-color: rgb(233, 233, 233);
+  color: rgb(38, 38, 38);
+  cursor: pointer;
+}
+
+
 .input-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,7 +46,8 @@ body{
   border: 1px solid grey;
   background-color: rgb(29, 29, 29);
   padding: 0.2rem 0.5rem;
-  width: 25rem;
+  width: 30rem;
+  height: 2rem;
   margin-top: 1rem;
 }
 
@@ -34,11 +56,12 @@ body{
   border: none;
   outline: none;
   color: rgb(163, 163, 163);
-  border-right: 1px solid white;
+  border-right: 1px solid rgb(163, 163, 163);
 }
 
 .combo-container{
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   padding: 0.2rem 0.5rem;
@@ -50,4 +73,25 @@ body{
 
 .combo-container>span{
   margin-left: 0.5rem;
+  font-size: small;
+}
+
+.combo-container>ul{
+  display: none;
+  position: absolute;
+  background-color: rgb(29, 29, 29);
+  list-style: none;
+  padding: 0.2rem 0.5rem;
+  top: 1.2rem;
+  z-index: 1;
+  font-size: small;
+  width: 14rem;
+}
+
+.show{
+  display: block !important;
+}
+
+.combo-container>ul>li:hover{
+  color: white;
 }

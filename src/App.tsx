@@ -8,6 +8,9 @@ function App() {
       <h2>1.03 PKR</h2>
       <CurrencyInput></CurrencyInput>
       <CurrencyInput></CurrencyInput>
+      <div className="button-container">
+        <button>Calculate</button>
+      </div>
     </div>
   )
 }
