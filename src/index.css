@@ -1,0 +1,53 @@
+body{
+  background-color: rgb(60, 60, 60);
+  color: rgb(219, 219, 219);
+  font-family: "Poppins", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container{
+  background-color: rgb(38, 38, 38);
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: -2px 2px 5px 1px black;
+}
+
+.main-container>p{
+  color: rgb(163, 163, 163);
+}
+
+.input-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  border: 1px solid grey;
+  background-color: rgb(29, 29, 29);
+  padding: 0.2rem 0.5rem;
+  width: 25rem;
+  margin-top: 1rem;
+}
+
+.input-container>input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(163, 163, 163);
+  border-right: 1px solid white;
+}
+
+.combo-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 0.5rem;
+}
+
+.combo-container:hover{
+  cursor: pointer;
+}
+
+.combo-container>span{
+  margin-left: 0.5rem;
+}
